@@ -1,0 +1,413 @@
+@font-face {
+  font-family: "CharlemagneStd";
+  src: url(CharlemagneStd.otf);
+}
+@font-face {
+  font-family: "FZsans";
+  src: url(FZsans.ttf);
+}
+.noMP {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-width: 1440px;
+  font-family: "CharlemagneStd";
+  margin: 0;
+  margin-top: -30px;
+  padding-top: 0;
+  background-size: 30%;
+}
+body img {
+  width: 100%;
+}
+#pot {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+}
+#topI1 {
+  width: 100%;
+}
+.container {
+  padding: 0;
+  text-align: center;
+}
+.container #top1 {
+  line-height: 30px;
+  font-family: 'FZsans';
+  font-size: 0.7em;
+  padding: 150px 0;
+  background-color: #fff;
+  color: black;
+}
+.container #top1 span {
+  display: block;
+}
+.container #top1 span:first-child {
+  font-size: 1.5em;
+}
+.container #top1 span {
+  font-size: 1.2em;
+  line-height: 20px;
+}
+.container #top2 {
+  height: 500px;
+  background-image: url('../img/top1.png');
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.container #top2 h1 {
+  position: absolute;
+  text-align: center;
+  width: 90%;
+  color: #fff;
+  font-size: 4em;
+  margin-top: 200px;
+}
+.container #top3 {
+  height: 300px;
+  background-color: #fff;
+}
+#topNav {
+  z-index: 99;
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #434343, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "FZsans";
+  font-weight: lighter;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+#topNav > ul {
+  margin: 0;
+  margin-top: 30px;
+  overflow: hidden;
+  background-position: -20px -100px;
+}
+#topNav > ul:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+#topNav > ul > li {
+  transition: 1s;
+  background-color: rgba(27, 27, 27, 0.9);
+  float: left;
+  list-style: none;
+}
+#topNav > ul > li:hover {
+  background-color: rgba(27, 27, 27, 0.5);
+}
+#topNav ul li > a,
+#topNav ul li a li a {
+  display: inline-block;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: #d6d6d6;
+  width: 150px;
+  padding: 20px 30px;
+}
+#topNav ul li > a:hover,
+#topNav ul li a li a:hover {
+  color: #fff;
+}
+#topNav ul li ul {
+  display: none;
+  background-image: url('../img/navUl.png');
+  background-color: #000;
+  position: absolute;
+  list-style: none;
+  margin: 0px;
+  padding: 0;
+}
+#topNav ul li ul a {
+  display: inline-block;
+}
+#topNav ul li:hover ul {
+  display: block;
+  animation: navs 0.5s ease-out;
+}
+#topNav ul li:hover ul li {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 0.8em;
+  transition: 1s;
+}
+#topNav ul li:hover ul li:hover {
+  transform: translateX(-15px);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#topNav #liImg {
+  transform: skewX(0deg);
+  width: 55%;
+  float: right;
+  background-image: url('../img/top1.png');
+}
+@-webkit-keyframes navs {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+.slogen,
+#slogen {
+  font-family: 'FZsans';
+  padding: 10%;
+  font-size: 2em;
+  text-align: center;
+}
+#cenNav {
+  z-index: 1;
+  padding: 0%;
+  height: 1000px;
+  overflow: hidden;
+  position: relative;
+}
+#cenNav h1 {
+  font-family: "CharlemagneStd";
+  position: absolute;
+  margin-left: 5%;
+  font-size: 5em;
+  color: #fff;
+}
+#cenNav h1 > ul {
+  margin: 0;
+  padding: 0;
+}
+#cenNav h1 > ul > li {
+  transition: 1s;
+  list-style: none;
+  font-size: 0.15em;
+  display: block;
+  color: #fff;
+  border: 3px solid #fff;
+  width: 40%;
+  padding: 20px 30px;
+  text-align: center;
+}
+#cenNav h1 > ul > li:hover {
+  background-color: #fff;
+}
+#cenNav h1 > ul > li:hover a {
+  color: #fff;
+}
+#cenNav h1 > ul > li:hover a:hover {
+  color: #898989;
+}
+#cenNav h1 > ul > li a {
+  color: #fff;
+  text-decoration: none;
+}
+#cenNav h1 > ul > li ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  margin: 0;
+  padding: 0;
+}
+#cenNav h1 > ul > li ul li {
+  margin-top: 3px;
+  display: block;
+  border: 3px solid #fff;
+}
+#cenNav h1 > ul > li ul li:hover {
+  background-color: #fff;
+}
+#cenNav h1 > ul > li ul li a {
+  display: inline-block;
+  padding: 20px 30px;
+  width: 118px;
+}
+#cenNav h1 > ul > li:hover ul {
+  display: block;
+}
+#cenNav video {
+  top: 0;
+  z-index: -2;
+}
+footer {
+  height: 500px;
+}
+#slogen2 {
+  background-image: url(../img/pro1Top2.jpg);
+}
+#slogen3 {
+  background-image: url(../img/pro2Top.jpg);
+}
+#slogen4 {
+  background-image: url(../img/pro3Top.jpg);
+}
+.slogen {
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.slogen .slogenContent {
+  text-align: center;
+  color: #898989;
+  margin: 0 auto;
+  font-size: 0.7em;
+  font-weight: lighter;
+  padding: 20px 30px;
+  width: 15%;
+  height: 500px;
+  background-color: #fff;
+}
+.slogen .slogenContent span {
+  font-size: 0.6em;
+  line-height: 40px;
+}
+.cenProduct {
+  font-family: sans-serif;
+  padding: 10%;
+  width: 100%;
+}
+.cenProduct img {
+  width: 40%;
+}
+.cenProduct .infoC {
+  width: 40%;
+  font-size: 30px;
+  display: inline-block;
+}
+.cenProduct .infoC h1 {
+  font-size: 1em;
+}
+.cenProduct .infoC .proSize {
+  width: 100%;
+}
+.cenProduct .infoC .proSize .proSizeWord {
+  font-size: 30px;
+  font-weight: lighter;
+  margin-right: 30px;
+  color: #898989;
+}
+.cenProduct .infoC .proSize .proSizeNum {
+  font-size: 20px;
+  font-weight: lighter;
+  margin-right: 10px;
+  border: 1px solid #1B1B1B;
+  padding: 10px 30px;
+  color: #898989;
+}
+.cenProduct .infoC .proSize .proSizeNum:hover {
+  background-color: #1B1B1B;
+  color: #fff;
+}
+.cenProduct .infoC .proNo {
+  font-weight: lighter;
+  font-size: 0.7em;
+  color: #898989;
+}
+.cenProduct .infoC .proColor {
+  font-size: 0.7em;
+  font-weight: lighter;
+  padding: 0 10px;
+  padding-top: 10px;
+  margin: 0;
+  border: 1px solid #1B1B1B;
+}
+.cenProduct .infoC .proColor img {
+  width: 60px;
+}
+.cenProduct .infoC .proColor p {
+  font-weight: lighter;
+  display: inline-block;
+  color: #898989;
+  padding: 0;
+  margin: 0;
+  transform: translate(50px, -25px);
+}
+.cenProduct .infoC .proPost {
+  font-weight: lighter;
+  font-size: 0.7em;
+}
+.cenProduct .infoC button {
+  width: 100%;
+  background: #000000;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #434343, #000000);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #434343, #000000);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  cursor: pointer;
+  height: 70px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.cenProduct .infoC button:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.cenProduct .infoC .proConnect {
+  font-weight: lighter;
+  text-align: right;
+  font-size: 0.7em;
+  color: #898989;
+}
+#bottomProduct {
+  padding: 10%;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+#bottomProduct img {
+  width: 100%;
+  margin-top: 100px;
+}
+#bottomProduct .proLeft {
+  width: 50%;
+  float: left;
+}
+#bottomProduct .proRight {
+  width: 39%;
+  float: right;
+}
+#aboutSlogen {
+  font-family: 'FZsans';
+  padding: 10%;
+  font-size: 2em;
+  text-align: center;
+  clear: both;
+}
+#aboutSlogen p {
+  font-size: 0.7em;
+}
+#aboutSlogen p span {
+  font-size: 0.7em;
+}
+#aboutSlogen img {
+  margin: 150px 0;
+  width: 70%;
+}
+#slogenAbout {
+  background-image: url(../img/top1s.png);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#slogenAbout .slogenContent {
+  float: right;
+}
+#aboutFoot {
+  height: 500px;
+  clear: both;
+}
